@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis-bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis.medium.otf') format('opentype');
+  font-weight: 500; /* Medium */
+}
+
+:root {
+  --purple: #722ED1;
+  --light-purple: #F7F1FF;
+  --dark-purple: #160637;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* ----------------------- Home Section Begin ----------------------- */
+
+.home_bg {
+  background-image: linear-gradient(#fff, #E3F2FF);
+  width: 100%;
+}
+
+.home_bg .nav-link {
+  font-size: 14px;
+  color: #000;
+}
+.home_bg .nav-link:hover {
+  color: #777;
+}
+
+.free_trial {
+  text-decoration: none;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  padding: 10px 24px;
+  border-radius: 23px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.free_trial:hover {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+.free_trial_white {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid var(--purple);
+  padding: 10px 24px;
+  border-radius: 23px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.4s;
+  background-color: var(--purple);
+}
+
+.free_trial_white:hover {
+  background-color: #fff;
+  color: var(--purple);
+}
+
+.bg_purple {
+  background-color: var(--light-purple);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: var(--purple);
+  display: inline-block;
+}
+
+.bg_purple a {
+  color: var(--purple);
+}
+
+.learn_more {
+  text-decoration: none;
+  color: var(--purple);
+  padding: 10px 24px;
+  border-radius: 23px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.4s;
+  background-color: #fff;
+}
+
+.learn_more:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.home_header {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+}
+.home_text {
+  color: #787C80;
+}
+/* ----------------------- Home Section End ----------------------- */
+
+
+/* ----------------------- Qubly Section Begin ----------------------- */
+.d_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-purple);
+}
+.d_text {
+  color: #8989A2;
+}
+
+.qubly_title {
+  color: var(--dark-purple);
+  font-weight: 700;
+  font-size: 16px;
+}
+/* ----------------------- Qubly Section End ----------------------- */
+
+
+
+/* ----------------------- Brand Section Begin ----------------------- */
+
+.brand_bg {
+  background-image: linear-gradient(#FCF8FF, #F3F8FF);
+  width: 100%;
+}
+
+.quote {
+  font-size: 24px;
+  color: #160637;
+}
+
+.full_info {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.line {
+  background-color: #DEC9FA;
+  height: 1px;
+  width: 100%;
+}
+/* ----------------------- Brand Section End ----------------------- */
+
+
+
+
+/* ----------------------- Form Section Begin ----------------------- */
+.grey_line {
+  background-color: #D6D6D6;
+  height: 1px;
+  width: 100%;
+}
+
+.trusted {
+  color: #8989A2;
+}
+
+.my_form {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.my_shadow {
+  transition: 0.5s;
+}
+.my_shadow:hover {
+  box-shadow: 30px 30px #F9F0FF;
+}
+
+.google_btn {
+  background-color: #4285F4;
+  text-decoration: none;
+  border-radius: 4px; 
+  padding: 1px;
+  font-size: 18px;
+}
+
+.login {
+  color: var(--purple);
+  font-size: 14px;
+}
+
+.free_trial_2 {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid var(--purple);
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.4s;
+  background-color: var(--purple);
+  text-align: center;
+}
+
+.free_trial_2:hover {
+  background-color: #fff;
+  color: var(--purple);
+}
+
+.my_form {
+  padding: 16px;
+  box-shadow: none;
+
+}
+
+.my_form::placeholder {
+  color: #8989A2;
+}
+
+/* ----------------------- Form Section End ----------------------- */
+
+
+
+
+
+/* ----------------------- Footer Section Begin ----------------------- */
+footer {
+  background-color: #FBFCFF;
+}
+
+.custom_form {
+display: flex;
+align-items: center;
+width: 100%; 
+background-color: white;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.custom_form input[type="email"]::placeholder {
+  color: #8989A2;
+}
+
+.custom_form input[type="email"] {
+border: none;
+outline: none;
+padding: 12px;
+width: 100%;
+font-size: 16px;
+}
+
+.custom_form button {
+background-color: white;
+border: none;
+cursor: pointer;
+padding: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.custom_form button img {
+width: 26px; 
+height: 26px;
+}
+
+
+
+.footer_title {
+  color: #160637;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #160637;
+  font-size: 14px;
+}
+
+.footer_link:hover {
+  color: #8989A2;
+}
+/* ----------------------- Footer Section End ----------------------- */
